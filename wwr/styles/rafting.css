@@ -4,34 +4,55 @@
     --accent1-color: #ff6b35;
     --accent2-color: #2c3e50;
 
-    ---heading-font: 'Open Sans', sans-serif;
-    ---paragraph-font: 'Raleway', sens-serif;
+    --heading-font: 'Open Sans', sans-serif;
+    --paragraph-font: 'Raleway', sans-serif;
 }
 
 body {
-    font-family: var(---paragraph-font)
-    
+    font-family: var(--paragraph-font);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family:var(---heading-font) ;
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    text-align: center;
 }
 
 a {
     text-decoration: none;
 }
 
-header, main, footer{
-    max-width: 1200px;
-    margin: 0 auto;
+img {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ddd;
+    padding: 15px;
+}
+
+.logo {
+    width: 80px;
+}
+
+nav a {
+    margin: 0 15px;
+    font-size: 1.2rem;
+    color: black;
 }
 
 .hero {
     position: relative;
+    text-align: center;
 }
+
 .hero img {
     width: 100%;
+    display: block;
 }
+
 .hero h1 {
     position: absolute;
     top: 10%;
@@ -40,58 +61,65 @@ header, main, footer{
     font-size: 2.5rem;
     background: rgba(0, 0, 0, 0.6);
     padding: 10px 20px;
-    color:#fff;
+    color: #fff;
 }
 
 .hero article {
     position: absolute;
     bottom: 10%;
-    left: 2rem;
-   right: 2rem;
+    left: 5%;
+    right: 5%;
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
-   
     color: white;
     text-align: left;
 }
 
-.hero article  .small-image {
+.hero article .small-image {
     float: right;
-    width: 12rem;
-    margin-left: 2rem;
+    width: 100px;
+    margin-left: 10px;
 }
 
-.history, .adventure {
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
     text-align: center;
-    padding: 20px;
 }
 
-.history p {
-    max-width: 800px;
-    margin: auto;
+.history h2 {
+    grid-column: 1 / 4;
 }
 
-.gallery {
+.history img {
+    grid-column: 2 / 3;
+    width: 100%;
+}
+
+.adventure h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.adventure-gallery {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
-    flex-wrap: wrap;
 }
 
-.gallery img {
-    width: 150px;
-    height: auto;
+.adventure-gallery figure {
+    text-align: center;
+    width: 18%;
 }
 
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px;
     background: #333;
     color: white;
-}
-
-.social-media {
-    margin-top: 10px;
 }
 
 .social-media img {
