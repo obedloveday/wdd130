@@ -10,6 +10,8 @@
 
 body {
     font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3 {
@@ -19,15 +21,23 @@ h1, h2, h3 {
 
 a {
     text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 img {
     width: 100%;
 }
 
+/* Header: Using CSS Grid */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     background: #ddd;
     padding: 15px;
@@ -37,12 +47,18 @@ header {
     width: 80px;
 }
 
-nav a {
-    margin: 0 15px;
-    font-size: 1.2rem;
-    color: black;
+/* Navigation: Using Flexbox */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
 }
 
+nav a {
+    font-size: 1.2rem;
+}
+
+/* Hero Section */
 .hero {
     position: relative;
     text-align: center;
@@ -81,6 +97,7 @@ nav a {
     margin-left: 10px;
 }
 
+/* History Section */
 .history {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -97,6 +114,7 @@ nav a {
     width: 100%;
 }
 
+/* Adventure Section */
 .adventure h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -113,6 +131,7 @@ nav a {
     width: 18%;
 }
 
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
@@ -122,7 +141,11 @@ footer {
     color: white;
 }
 
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
 .social-media img {
     width: 30px;
-    margin: 0 5px;
 }
