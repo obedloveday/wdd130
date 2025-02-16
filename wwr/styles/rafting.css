@@ -1,166 +1,156 @@
-/* Global Styles */
-:root {
-    --primary-color: #0077b6;
-    --secondary-color: #48cae4;
-    --accent1-color: #ff6b35;
-    --accent2-color: #2c3e50;
-    --heading-font: 'Open Sans', sans-serif;
-    --paragraph-font: 'Raleway', sans-serif;
-}
-
+/* General Styles */
 body {
-    font-family: var(--paragraph-font);
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
-/* Header */
 header {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
     align-items: center;
-    background: var(--primary-color);
-    padding: 15px;
-    color: white;
+    justify-content: space-between;
+    background: #0077b6;
+    padding: 10px 20px;
 }
 
-.logo {
-    width: 80px;
+header img {
+    width: 100px;
 }
 
 nav ul {
     display: flex;
-    justify-content: flex-end;
-    gap: 20px;
+    list-style: none;
+    padding: 0;
 }
 
-nav a {
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
-}
-
-nav .active {
     font-weight: bold;
 }
 
-/* Hero Section */
 .hero {
     position: relative;
-    text-align: center;
+    width: 100%;
 }
 
 .hero img {
     width: 100%;
-    display: block;
+    height: auto;
 }
 
-.hero h2 {
+.hero h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    color: #fff;
-}
-
-/* Contact Info */
-.contact-info {
-    text-align: center;
-    padding: 20px;
-    background: var(--secondary-color);
     color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 5px;
 }
 
-.info-grid p {
-    margin: 10px 0;
-}
-
-/* Map */
-.map {
-    text-align: center;
+.cta {
+    background: #023e8a;
+    color: white;
     padding: 20px;
 }
 
-iframe {
-    width: 80%;
-    max-width: 600px;
-    height: 300px;
-    border: none;
+.cta .button {
+    background: white;
+    color: #023e8a;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Contact Form */
-.contact-form {
-    background: #f4f4f4;
+.newsletter {
     padding: 20px;
-    text-align: center;
+    background: #90e0ef;
 }
 
-form {
-    max-width: 500px;
-    margin: auto;
+.newsletter form {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 10px;
 }
 
-input, select, textarea {
-    padding: 8px;
-    width: 100%;
+.newsletter input {
+    padding: 10px;
+    width: 250px;
 }
 
-button {
-    background: var(--accent1-color);
+.newsletter button {
+    padding: 10px;
+    background: #0077b6;
     color: white;
     border: none;
-    padding: 10px;
     cursor: pointer;
 }
 
-/* Team Section */
-.team {
-    text-align: center;
-    padding: 20px;
-}
-
-.team-grid {
+.contact-form form {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.team-grid img {
-    width: 150px;
-    border-radius: 50%;
-}
-
-/* Footer */
-footer {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    background: var(--accent2-color);
-    color: white;
-    padding: 15px;
-}
-
-.social-media {
-    display: flex;
     gap: 10px;
 }
 
-.social-media img {
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    padding: 10px;
+}
+
+.contact-form button {
+    background: #0077b6;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #0077b6;
+    color: white;
+    padding: 10px;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .social-media img {
     width: 30px;
 }
 
-.wireframe {
-    text-align: center;
-    margin: 20px 0;
+.trips, .adventure {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.wireframe a {
-    font-size: 1.2rem;
-    color: var(--primary-color);
-    text-decoration: underline;
+.trips figure, .adventure figure {
+    text-align: center;
+}
+
+.trips img, .adventure img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer a {
+    color: #fff; /* Match the footer text color */
+    text-decoration: underline; /* Make it stand out */
+}
+
+footer a:hover {
+    color: #ffcc00; /* Highlight on hover */
 }
