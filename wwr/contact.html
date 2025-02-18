@@ -1,74 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - White Water Rafting</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - White Water Rafting</title>
+  <meta name="description" content="Get in touch with White Water Rafting for bookings, inquiries, or more information on our adventures.">
+  <link rel="stylesheet" type="text/css" href="styles/rafting.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <img src="images/logo.jpg" alt="Rafting Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <img src="images/logo.jpg" alt="Rafting Logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <div class="hero">
-        <img src="images/hero.jpg" alt="Rafting Adventure">
-        <h1>Contact Us</h1>
+  <div class="hero">
+    <img src="images/hero.jpg" alt="Rafting Adventure">
+    <h1>Contact Us</h1>
+  </div>
+  <main>
+    <section class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>Email: <a href="mailto:info@raftingcompany.com">info@raftingcompany.com</a></p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Address: 123 River Rd, Adventure City</p>
+    </section>
+
+    <section class="contact-images">
+      <h2>Our Teams</h2>
+      <figure>
+        <img src="images/employee1.jpg" alt="Our Office">
+        <figcaption>Our Office</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee2.jpg" alt="Our Team">
+        <figcaption>Our Security</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee3.jpg" alt="Our Location">
+        <figcaption>Our Coordinator</figcaption>
+      </figure>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section class="map">
+      <h2>Find Us</h2>
+      <iframe src="https://www.google.com/maps/embed?" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 White Water Rafting | Obed Eberechi</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com/whitewaterrafting" target="_blank">
+        <img src="images/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://twitter.com/whitewaterraft" target="_blank">
+        <img src="images/twitter.png" alt="Twitter">
+      </a>
+      <a href="https://www.instagram.com/whitewaterrafting" target="_blank">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
     </div>
-
-    <!-- Main Content -->
-    <main>
-        <section class="contact-info">
-            <h2>Get in Touch</h2>
-            <p>Email: <a href="mailto:info@raftingcompany.com">info@raftingcompany.com</a></p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Address: 123 River Rd, Adventure City, CA 90210</p>
-        </section>
-
-        <!-- Contact Form -->
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form>
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-
-        <!-- Map Section -->
-        <section class="map">
-            <h2>Find Us</h2>
-            <iframe src="https://www.google.com/maps/embed?" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 White Water Rafting | Obed Eberechi</p>
-        <div class="social-media">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-        </div>
-    </footer>
+  </footer>
 
 </body>
 </html>

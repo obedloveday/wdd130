@@ -4,47 +4,47 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-}
-
-header {
+  }
+  
+  header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #0077b6;
     padding: 10px 20px;
-}
-
-header img {
+  }
+  
+  header img {
     width: 100px;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     display: flex;
     list-style: none;
     padding: 0;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     margin: 0 15px;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-}
-
-.hero {
+  }
+  
+  .hero {
     position: relative;
     width: 100%;
-}
-
-.hero img {
+  }
+  
+  .hero img {
     width: 100%;
     height: auto;
-}
-
-.hero h1 {
+  }
+  
+  .hero h1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -53,104 +53,300 @@ nav ul li a {
     background: rgba(0, 0, 0, 0.6);
     padding: 15px;
     border-radius: 5px;
-}
-
-.cta {
+  }
+  
+  .cta {
     background: #023e8a;
     color: white;
     padding: 20px;
-}
-
-.cta .button {
+  }
+  
+  .cta .button {
     background: white;
     color: #023e8a;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
-}
-
-.newsletter {
+  }
+  
+  .newsletter {
     padding: 20px;
     background: #90e0ef;
-}
-
-.newsletter form {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.newsletter input {
-    padding: 10px;
-    width: 250px;
-}
-
-.newsletter button {
-    padding: 10px;
-    background: #0077b6;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.contact-form form {
+  }
+  
+  .newsletter form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-}
-
-.contact-form input, .contact-form textarea {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .newsletter label {
+    font-weight: bold;
+  }
+  
+  .newsletter input {
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .newsletter button {
+    padding: 10px;
+    background: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .grid-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .grid-item {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
     width: 80%;
     padding: 10px;
-}
-
-.contact-form button {
+  }
+  
+  .contact-form button {
     background: #0077b6;
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
-}
-
-footer {
+  }
+  
+  footer {
     background: #0077b6;
     color: white;
     padding: 10px;
-}
-
-footer .social-media {
+  }
+  
+  footer .social-media {
     display: flex;
     justify-content: center;
     gap: 10px;
-}
-
-footer .social-media img {
+  }
+  
+  footer .social-media img {
     width: 30px;
-}
-
-.trips, .adventure {
+  }
+  
+  .trips, .adventure {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-}
-
-.trips figure, .adventure figure {
+  }
+  
+  .trips figure, .adventure figure {
     text-align: center;
-}
-
-.trips img, .adventure img {
+  }
+  
+  .trips img, .adventure img {
     width: 200px;
     height: auto;
     border-radius: 5px;
-}
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  footer a:hover {
+    color: #ffcc00;
+  }
+  
+  .blue-box {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 90%;
+    background-color: rgba(0, 123, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 5;
+  }
+  
+  .blue-box article {
+    display: flex;
+    align-items: center;
+  }
+  
+  .blue-box article img {
+    width: 150px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 0;
+    order: 2;
+  }
+  
+  .blue-box article p {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+  }
+  
+  .history-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .history-text {
+    width: 40%;
+  }
+  
+  .history-image {
+    width: 15%;
+    max-width: 150px;
+    height: auto;
+  }
+  
+  .history {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+  .adventure {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .adventure h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .adventure-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .adventure-container figure {
+    text-align: center;
+  }
+  
+  .adventure-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .trip-summary {
+    padding: 20px;
+  }
+  
+  .trip-summary table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  .trip-summary th,
+  .trip-summary td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .trip-summary th {
+    background: #023e8a;
+    color: white;
+  }
+  
+  .trips-cta {
+    padding: 20px;
+    background: #90e0ef;
+  }
+  
+  .trips-cta .button {
+    background: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-footer a {
-    color: #fff; /* Match the footer text color */
-    text-decoration: underline; /* Make it stand out */
-}
-
-footer a:hover {
-    color: #ffcc00; /* Highlight on hover */
-}
+  footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  footer .social-media img {
+    width: 30px;
+  }
+  
+.contact-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .contact-images figure {
+    flex: 1 1 300px;
+    margin: 0;
+  }
+  
+  .contact-images img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .contact-images figcaption {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  
